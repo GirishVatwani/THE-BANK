@@ -93,4 +93,4 @@ Feel free to fork this repo and raise a pull request if you have suggestions or 
 
 ## 📧 Contact
 
-For feedback or issues, contact [your-email@example.com] or message [@YourTelegramUsername](https://t.me/YourTelegramUsername)
+For feedback or issues, contact vatwani.girish@gmail.com or message https://t.me/Harry_502
