@@ -48,26 +48,27 @@ if __name__ == "__main__":
     mydb = dbconnector.connect(host="<your_host/localhost>", user="<database_username>", passwd="<acess- password>", database = "<database__name>")
     if mydb.is_connected():
         mycursor = mydb.cursor()
-        # if query == "SafityIssue502":
-        #     print("⚠️SQL Injection Detected⚠️")
-        # else:
-        #     mycursor.execute(query)
-        #     mydb.commit()
-        #     print("Query Commited Sucellfully")
+        if query == "SafityIssue502":
+            print("⚠️SQL Injection Detected⚠️")
+        else:
+            mycursor.execute(query)
+            mydb.commit()
+            print("Query Commited Sucellfully")
 
-        # mycursor.execute("SELECT * FROM voter WHERE VoterID = %s", ('PRS9090',)) Method to Bypass injection
-        # print(mycursor.fetchone()) Will give first row
-        # data = get_data()
-        # query = get_insert_query(data, "voter")
-        # print(query)
-        # if existing_user(mycursor, get_delete()):
-        #     print("User already exists")
-        # else:
-        #     print("User does not exist")
+        mycursor.execute("SELECT * FROM voter WHERE VoterID = %s", ('PRS9090',)) Method to Bypass injection
+        print(mycursor.fetchone()) Will give first row
+        data = get_data()
+        query = get_insert_query(data, "voter")
+        print(query)
+        if existing_user(mycursor, get_delete()):
+            print("User already exists")
+        else:
+            print("User does not exist")
 
-        # mycursor.execute(query, placeholders)
+        mycursor.execute(query, placeholders)
 
 
     else:
         print("Connection failed!")
+
 
