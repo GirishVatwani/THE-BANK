@@ -4,8 +4,8 @@ import asyncio
 import datetime as dt
 from database import *
 
-TOKEN = "<ENTER YOUR BOT TOCKEN HERE>"
-BOT_USERNAME = "<BOT USERNAME>"
+# TOKEN = "<ENTER YOUR BOT TOCKEN HERE>"
+# BOT_USERNAME = "<BOT USERNAME>"
 
 update = tex.Updater(TOKEN,  asyncio.Queue())
 
@@ -202,3 +202,4 @@ if __name__ == "__main__":
 
         print("Bot Started Polling...")
         application.run_polling()
+
